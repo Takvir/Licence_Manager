@@ -1,0 +1,27 @@
+<div fxLayout="row" fxLayoutAlign="start start">
+  <div>
+    <p>Login Page</p>
+    <!-- <div>
+  <button (click)="signWithGoogle()">Login with Google</button>
+</div> -->
+
+    <div fxLayout="column">
+      <button class="button login__submit">
+        <asl-google-signin-button *ngIf="!user"></asl-google-signin-button>
+        <span class="ml-2">Log In Now</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- <div>
+    <h4>Takvir</h4>
+  </div> -->
+</div>
+
+
+
+
+  <div *ngIf="!isTakvir">
+    <h1>You are not authorize to login</h1>
+  </div>
+
