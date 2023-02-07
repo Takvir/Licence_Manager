@@ -1,30 +1,45 @@
-
-
-.login__submit {
-	background: #fff;
-	font-size: 14px;
-	margin-top: 30px;
-	padding: 16px 20px;
-	border-radius: 26px;
-	border: 1px solid #d4d3e8;
-	text-transform: uppercase;
-	font-weight: 700;
-	display: flex;
-	align-items: center;
-	width: 100%;
-	color: #4c489d;
-	box-shadow: 0px 2px 2px #5c5696;
-	cursor: pointer;
-	transition: 0.2s;
+.container {
+  max-width: 620px;
+  max-height: 510px;
+  position: absolute;
+  top: 20%;
+  left: 30%;
+}
+.login-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 80px;
 }
 
-.login__submit:active,
-.login__submit:focus,
-.login__submit:hover {
-	border-color: #6a679e;
-	outline: none;
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
 }
 
+.outer-container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #f7fbff;
+  position: relative;
+}
+.blue-bg {
+  height: 250px;
+  width: 100%;
+  background-color: #0066b2;
+}
 
-
-
+.back-btn {
+  background-color: #0066b2; /* Green */
+  border: none;
+  color: white;
+  padding: 5px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 50px;
+}

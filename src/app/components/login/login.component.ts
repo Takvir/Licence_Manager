@@ -17,7 +17,7 @@ export class LoginComponent implements OnInit {
   ngOnInit(): void {
     this.authService.authState.subscribe((user)=>{
       this.user = user;
-      if(this.user?.email == 'takvir.alam@selise.ch' || 'takvir.alam@gmail.com')
+      if(this.user?.id == 108978967095096946615)
       {
         this.isTakvir = true;
         this._router.navigate(['list'])
@@ -37,6 +37,11 @@ export class LoginComponent implements OnInit {
 
   signOut() : any {  // For Sign Out
     this.authService.signOut();
+  }
+
+  backtoLogin(){
+    console.log('click')
+    this.user = false;
   }
 
 }

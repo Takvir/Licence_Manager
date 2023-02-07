@@ -17,6 +17,10 @@ import { LoginComponent } from './components/login/login.component';
 import { LicenceListComponent } from './components/licence-list/licence-list.component';
 import {MatTableModule} from '@angular/material/table';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import {MatDividerModule} from '@angular/material/divider';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
 
 
 
@@ -36,7 +40,11 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatFormFieldModule,
     ReactiveFormsModule,
     MatTableModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatDividerModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatIconModule
 
 
   ],

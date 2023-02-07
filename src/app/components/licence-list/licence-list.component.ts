@@ -42,7 +42,11 @@ export class LicenceListComponent implements OnInit {
   ];
   dataSource = ELEMENT_DATA;
 
+  showFiller = false;
+
   constructor() {}
 
   ngOnInit(): void {}
+
+
 }

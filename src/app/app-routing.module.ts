@@ -4,13 +4,14 @@ import { LicenceListComponent } from './components/licence-list/licence-list.com
 import { LoginComponent } from './components/login/login.component';
 
 const routes: Routes = [
+  { path: '', pathMatch: 'full', redirectTo: 'login' },
   {
     component : LicenceListComponent,
     path : 'list'
   },
   {
     component : LoginComponent,
-    path : ''
+    path : 'login'
   }
 ];
 

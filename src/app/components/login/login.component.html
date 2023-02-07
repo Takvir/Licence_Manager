@@ -1,27 +1,48 @@
-<div fxLayout="row" fxLayoutAlign="start start">
-  <div>
-    <p>Login Page</p>
-    <!-- <div>
-  <button (click)="signWithGoogle()">Login with Google</button>
-</div> -->
+<div class="outer-container">
+  <div class="blue-bg"></div>
+  <div class="container">
+    <mat-card class="login-card">
+      <img src="assets/seliselogo.JPG" />
+      <mat-card-title>
+        <div
+          class="mt-4"
+          style="
+            font-size: 28px;
+            font-style: inter;
+            color: #0066b2;
+            font-weight: 600;
+          "
+        >
+          License Inventory Management
+        </div>
+      </mat-card-title>
+      <mat-card-content>
+        <h1 style="font-size: 16px; font-style: normal; font-weight: 500">
+          Please Login Gmail to Verify Your Account
+        </h1>
+      </mat-card-content>
 
-    <div fxLayout="column">
-      <button class="button login__submit">
-        <asl-google-signin-button *ngIf="!user"></asl-google-signin-button>
-        <span class="ml-2">Log In Now</span>
-      </button>
-    </div>
+      <mat-card-content>
+        <mat-divider class="mb-6"></mat-divider>
+        <div class="mt-6">
+          <asl-google-signin-button
+            type="standard"
+            width="350"
+            shape="square"
+
+            size="large"
+            width="400"
+            *ngIf="!user"
+          >
+          </asl-google-signin-button>
+        </div>
+      </mat-card-content>
+      <div *ngIf="user">
+        <button class="back-btn mb-5" (click)="backtoLogin()">Back</button>
+        <h1 style="color: rgb(173, 42, 42); font-weight: 600">
+          You Are Not Authorize to Login
+        </h1>
+      </div>
+    </mat-card>
   </div>
-
-  <!-- <div>
-    <h4>Takvir</h4>
-  </div> -->
 </div>
-
-
-
-
-  <div *ngIf="!isTakvir">
-    <h1>You are not authorize to login</h1>
-  </div>
-
