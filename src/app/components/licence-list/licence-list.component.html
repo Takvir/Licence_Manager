@@ -1,4 +1,18 @@
-<p>licence-list works!</p>
+<!-- <div class="blue-bg">
+  <mat-card class="card">
+    <img
+      style="
+
+        border-radius: 4px;
+        padding: 5px;
+        width: 150px;
+        height: 60px;
+        margin-top: 0px;
+      "
+      src="assets/seliselogo.JPG"
+    />
+  </mat-card>
+</div> -->
 
 <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
   <ng-container matColumnDef="position">
@@ -64,3 +78,5 @@
   <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
   <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
 </table>
+
+

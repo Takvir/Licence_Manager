@@ -1,0 +1,68 @@
+<!-- <div class="outer-container">
+  <div>
+    <div fxLayout="column" class="menu-items">
+      <div style="margin-top: 40px;">
+
+      </div>
+      <button *ngFor="let link of navWebLink"
+        style="
+
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+        "
+        routerLink="{{link.url}}"
+        [ngClass]="{'active-button': link.url == currentlySelected}" (click)="toggleActive(link)"
+
+      >
+        {{link.name}}
+      </button>
+      <mat-divider></mat-divider>
+
+      <mat-divider></mat-divider>
+    </div>
+  </div>
+</div> -->
+
+
+<mat-toolbar color="primary" class="example-toolbar">
+	<button mat-icon-button (click)="isExpanded = !isExpanded">Click</button>
+
+</mat-toolbar>
+
+<mat-sidenav-container class="example-container" autosize>
+	<mat-sidenav #sidenav class="example-sidenav" mode="side" opened="true" (mouseenter)="mouseenter()" (mouseleave)="mouseleave()">
+    <div style="margin-top: 40px;">
+
+    </div>
+    <mat-nav-list>
+			<mat-list-item  (click)="showSubmenu = !showSubmenu"  routerLink="/license-list">
+				<span class="full-width" *ngIf="isExpanded || isShowing">MITS License</span>
+
+
+			</mat-list-item>
+      <mat-list-item (click)="showSubmenu = !showSubmenu"  routerLink="/web-license">
+				<span class="full-width" *ngIf="isExpanded || isShowing">WEB License</span>
+
+
+			</mat-list-item>
+      <mat-list-item (click)="showSubmenu = !showSubmenu"  routerLink="/hardware-assets">
+				<span class="full-width" *ngIf="isExpanded || isShowing">Hardware License</span>
+
+
+			</mat-list-item>
+
+		</mat-nav-list>
+    <mat-nav-list>
+</mat-nav-list>
+	</mat-sidenav>
+
+	<div class="example-sidenav-content">
+		<div style="width : 100%">
+      <router-outlet></router-outlet>
+    </div>
+
+
+	</div>
+</mat-sidenav-container>

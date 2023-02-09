@@ -20,7 +20,7 @@ export class LoginComponent implements OnInit {
       if(this.user?.id == 108978967095096946615)
       {
         this.isTakvir = true;
-        this._router.navigate(['list'])
+        this._router.navigate(['license-list'])
       }
       else{
         this.isTakvir = false;

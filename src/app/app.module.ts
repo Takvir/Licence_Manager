@@ -21,7 +21,16 @@ import {MatDividerModule} from '@angular/material/divider';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
-
+import { HeadersComponent } from './components/headers/headers.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { WebLicenseComponent } from './components/web-license/web-license.component';
+import { HardwareAssetsComponent } from './components/hardware-assets/hardware-assets.component';
+import {MatListModule} from '@angular/material/list';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatExpansionModule} from '@angular/material/expansion';
+import { HomeComponent } from './components/home/home.component';
 
 
 
@@ -29,10 +38,17 @@ import { MatIconModule } from '@angular/material/icon';
   declarations: [
     AppComponent,
     LoginComponent,
-    LicenceListComponent
+    LicenceListComponent,
+    HeadersComponent,
+    NavbarComponent,
+    WebLicenseComponent,
+    HardwareAssetsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
+
     AppRoutingModule,
     SocialLoginModule,
     MatButtonModule,
@@ -44,7 +60,10 @@ import { MatIconModule } from '@angular/material/icon';
     MatDividerModule,
     MatToolbarModule,
     MatSidenavModule,
-    MatIconModule
+    MatIconModule,
+    MatListModule,
+    MatCheckboxModule,
+    MatExpansionModule
 
 
   ],
