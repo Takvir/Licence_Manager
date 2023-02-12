@@ -7,10 +7,10 @@ import { LoginComponent } from './components/login/login.component';
 import { WebLicenseComponent } from './components/web-license/web-license.component';
 
 const routes: Routes = [
-  // { path: '', pathMatch: 'full', redirectTo: 'login' },
+  { path: '', pathMatch: 'full', redirectTo: 'login' },
   {
     component : LoginComponent,
-    path : 'login'
+    path : ''
   },
   {
     component : HomeComponent,
@@ -20,10 +20,7 @@ const routes: Routes = [
     component : LicenceListComponent,
     path : 'license-list'
   },
-  {
-    component : LoginComponent,
-    path : 'login'
-  },
+
   {
     component : WebLicenseComponent,
     path : 'web-license'
@@ -31,7 +28,8 @@ const routes: Routes = [
   {
     component : HardwareAssetsComponent,
     path : 'hardware-assets'
-  }
+  },
+
 ];
 
 @NgModule({

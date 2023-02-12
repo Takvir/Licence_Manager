@@ -1,6 +1,7 @@
 <!-- <app-headers></app-headers> -->
 <!-- <app-navbar></app-navbar> -->
-<router-outlet></router-outlet>
+<!-- <router-outlet></router-outlet> -->
 <!-- <app-home></app-home> -->
 
-
+<app-home *ngIf="!isSignin"></app-home>
+<app-login *ngIf="isSignin"></app-login>

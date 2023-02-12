@@ -11,8 +11,24 @@
   background-color: #f7fbff;
 }
 
-.card
+.mat-card
 {
-  height: 80px;
+  height: 75px;
   width: 100vw;
+
 }
+
+:host ::ng-deep.mat-button.download-btn {
+  background: #086dba;
+  padding: 4px;
+  min-width: 152px;
+  color: white;
+
+}
+
+:host ::ng-deep.mat-card.card {
+  background: #e6e7e8;
+
+
+}
+
