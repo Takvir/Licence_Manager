@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {MatDialog} from '@angular/material/dialog';
+import { MitsLicenseComponent } from '../modals/mits-license/mits-license.component';
 
 export interface PeriodicElement {
   name: string;
@@ -44,9 +46,19 @@ export class LicenceListComponent implements OnInit {
 
   showFiller = false;
 
-  constructor() {}
+  constructor(
+    public dialog: MatDialog
+  ) {}
 
   ngOnInit(): void {}
 
+  openDialog() {
+    const dialogRef = this.dialog.open(MitsLicenseComponent);
 
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
 }
+
+

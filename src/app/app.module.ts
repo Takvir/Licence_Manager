@@ -31,6 +31,8 @@ import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { HomeComponent } from './components/home/home.component';
+import { MitsLicenseComponent } from './components/modals/mits-license/mits-license.component';
+import {MatDialogModule} from '@angular/material/dialog';
 
 
 
@@ -43,7 +45,8 @@ import { HomeComponent } from './components/home/home.component';
     NavbarComponent,
     WebLicenseComponent,
     HardwareAssetsComponent,
-    HomeComponent
+    HomeComponent,
+    MitsLicenseComponent
   ],
   imports: [
     BrowserModule,
@@ -63,7 +66,8 @@ import { HomeComponent } from './components/home/home.component';
     MatIconModule,
     MatListModule,
     MatCheckboxModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatDialogModule
 
 
   ],

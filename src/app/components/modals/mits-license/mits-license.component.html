@@ -1,0 +1,115 @@
+<mat-dialog-content class="mat-typography">
+  <form [formGroup]="form">
+    <div fxLayout="column" fxFlex="100">
+      <div
+        fxLayout="row wrap"
+        fxFlex="70"
+        fxLayoutAlign="center start"
+        fxLayout.lt-sm="column"
+        fxLayoutAlign.lt-sm="start center"
+        fxLayoutGap="16px"
+        fxLayoutGap.lt-sm="0px"
+      >
+        <div fxFlex="70" class="mr-0">
+          <div fxLayout="column">
+            <h2 class="text-xl font-bold mb-2 mt-4">Contact Info</h2>
+          </div>
+        </div>
+
+        <!-- Name field -->
+        <mat-form-field fxFlex="70" fxFlex.lt-sm="100" class="w-full mr-0">
+          <mat-label class="text-sm">Name</mat-label>
+          <input id="name" formControlName="name" matInput  />
+          <!-- <mat-error *ngIf="hasValidationError('name')?.touched">
+            Name is required
+          </mat-error> -->
+        </mat-form-field>
+
+        <!-- Name field -->
+        <mat-form-field fxFlex="70" fxFlex.lt-sm="100" class="w-full mr-0">
+          <mat-label class="text-sm">Owner (Unit)</mat-label>
+          <input id="name" formControlName="owner" matInput  />
+          <!-- <mat-error *ngIf="hasValidationError('name')?.touched">
+                    Name is required
+                  </mat-error> -->
+        </mat-form-field>
+        <!-- Name field -->
+        <mat-form-field fxFlex="70" fxFlex.lt-sm="100" class="w-full mr-0">
+          <mat-label class="text-sm">Description</mat-label>
+          <input id="name" formControlName="desciption" matInput  />
+          <!-- <mat-error *ngIf="hasValidationError('name')?.touched">
+            Name is required
+          </mat-error> -->
+        </mat-form-field>
+        <!-- Name field -->
+        <mat-form-field fxFlex="70" fxFlex.lt-sm="100" class="w-full mr-0">
+          <mat-label class="text-sm">URL</mat-label>
+          <input id="name" formControlName="url" matInput  />
+          <!-- <mat-error *ngIf="hasValidationError('name')?.touched">
+                    Name is required
+                  </mat-error> -->
+        </mat-form-field>
+        <!-- Name field -->
+        <mat-form-field fxFlex="70" fxFlex.lt-sm="100" class="w-full mr-0">
+          <mat-label class="text-sm">Username</mat-label>
+          <input id="name" formControlName="username" matInput  />
+          <!-- <mat-error *ngIf="hasValidationError('name')?.touched">
+            Name is required
+          </mat-error> -->
+        </mat-form-field>
+        <!-- Name field -->
+        <mat-form-field fxFlex="70" fxFlex.lt-sm="100" class="w-full mr-0">
+          <mat-label class="text-sm">Email</mat-label>
+          <input id="name" formControlName="email" matInput  />
+          <!-- <mat-error *ngIf="hasValidationError('name')?.touched">
+                    Name is required
+                  </mat-error> -->
+        </mat-form-field>
+        <!-- Name field -->
+        <mat-form-field fxFlex="70" fxFlex.lt-sm="100" class="w-full mr-0">
+          <mat-label class="text-sm">Old Password</mat-label>
+          <input id="name" formControlName="old_pass" matInput  />
+          <!-- <mat-error *ngIf="hasValidationError('name')?.touched">
+            Name is required
+          </mat-error> -->
+        </mat-form-field>
+        <!-- Name field -->
+        <mat-form-field fxFlex="70" fxFlex.lt-sm="100" class="w-full mr-0">
+          <mat-label class="text-sm">	New Password</mat-label>
+          <input id="name" formControlName="new_pass" matInput rquired />
+          <!-- <mat-error *ngIf="hasValidationError('name')?.touched">
+                    Name is required
+                  </mat-error> -->
+        </mat-form-field>
+        <!-- Name field -->
+        <mat-form-field fxFlex="70" fxFlex.lt-sm="100" class="w-full mr-0">
+          <mat-label class="text-sm">Status</mat-label>
+          <input id="name" formControlName="status" matInput  />
+          <!-- <mat-error *ngIf="hasValidationError('name')?.touched">
+            Name is required
+          </mat-error> -->
+        </mat-form-field>
+        <!-- Name field -->
+        <mat-form-field fxFlex="70" fxFlex.lt-sm="100" class="w-full mr-0">
+          <mat-label class="text-sm">	Billing Alert</mat-label>
+          <input id="name" formControlName="billing_alert" matInput  />
+          <!-- <mat-error *ngIf="hasValidationError('name')?.touched">
+                    Name is required
+                  </mat-error> -->
+        </mat-form-field>
+        <!-- Name field -->
+        <mat-form-field fxFlex="70" fxFlex.lt-sm="100" class="w-full mr-0">
+          <mat-label class="text-sm">Note</mat-label>
+          <input id="name" formControlName="note" matInput required />
+          <!-- <mat-error *ngIf="hasValidationError('name')?.touched">
+            Name is required
+          </mat-error> -->
+        </mat-form-field>
+      </div>
+    </div>
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Install</button>
+</mat-dialog-actions>

@@ -47,7 +47,7 @@
       (mouseleave)="mouseleave()"
     >
       <div style="margin-top: 80px"></div>
-      <mat-nav-list>
+      <mat-nav-list class="nav-list">
         <mat-list-item
           (click)="showSubmenu = !showSubmenu"
           routerLink="/license-list"
@@ -56,6 +56,7 @@
             >MITS License</span
           >
         </mat-list-item>
+        <mat-divider></mat-divider>
         <mat-list-item
           (click)="showSubmenu = !showSubmenu"
           routerLink="/web-license"
@@ -64,6 +65,7 @@
             >WEB License</span
           >
         </mat-list-item>
+        <mat-divider></mat-divider>
         <mat-list-item
           (click)="showSubmenu = !showSubmenu"
           routerLink="/hardware-assets"
@@ -72,15 +74,16 @@
             >Hardware License</span
           >
         </mat-list-item>
+        <mat-divider></mat-divider>
       </mat-nav-list>
-      <mat-nav-list> </mat-nav-list>
+
     </mat-sidenav>
 
     <div class="example-sidenav-content">
       <div style="overflow-x: hidden; overflow-y: auto">
-        <div style="margin-top: 64px">
+        <!-- <div style="margin-top: 64px">
           <app-headers></app-headers>
-        </div>
+        </div> -->
         <router-outlet></router-outlet>
       </div>
     </div>
