@@ -3,38 +3,39 @@
     <div fxLayout="column" fxFlex="100">
       <div
         fxLayout="row wrap"
-        fxFlex="70"
+        fxFlex="80"
         fxLayoutAlign="center start"
         fxLayout.lt-sm="column"
         fxLayoutAlign.lt-sm="start center"
         fxLayoutGap="16px"
         fxLayoutGap.lt-sm="0px"
       >
-        <div fxFlex="70" class="mr-0">
+        <div fxFlex="70" class="mr-0" >
           <div fxLayout="column">
-            <h2 class="text-xl font-bold mb-2 mt-4">Contact Info</h2>
+            <h2 class="text-xl font-bold mb-2 " style="margin-top: 40px;">Add License Info</h2>
           </div>
         </div>
+
 
         <!-- Name field -->
         <mat-form-field fxFlex="70" fxFlex.lt-sm="100" class="w-full mr-0">
           <mat-label class="text-sm">Name</mat-label>
-          <input id="name" formControlName="name" matInput  />
+          <input id="name" formControlName="name" matInput   />
           <!-- <mat-error *ngIf="hasValidationError('name')?.touched">
             Name is required
           </mat-error> -->
         </mat-form-field>
 
         <!-- Name field -->
-        <mat-form-field fxFlex="70" fxFlex.lt-sm="100" class="w-full mr-0">
+        <mat-form-field fxFlex="35" fxFlex.lt-sm="100" class="w-full mr-0">
           <mat-label class="text-sm">Owner (Unit)</mat-label>
-          <input id="name" formControlName="owner" matInput  />
+          <input id="name" formControlName="owner"  matInput />
           <!-- <mat-error *ngIf="hasValidationError('name')?.touched">
                     Name is required
                   </mat-error> -->
         </mat-form-field>
         <!-- Name field -->
-        <mat-form-field fxFlex="70" fxFlex.lt-sm="100" class="w-full mr-0">
+        <mat-form-field fxFlex="34" fxFlex.lt-sm="100" class="w-full mr-0">
           <mat-label class="text-sm">Description</mat-label>
           <input id="name" formControlName="desciption" matInput  />
           <!-- <mat-error *ngIf="hasValidationError('name')?.touched">
@@ -50,7 +51,7 @@
                   </mat-error> -->
         </mat-form-field>
         <!-- Name field -->
-        <mat-form-field fxFlex="70" fxFlex.lt-sm="100" class="w-full mr-0">
+        <mat-form-field fxFlex="35" fxFlex.lt-sm="100" class="w-full mr-0">
           <mat-label class="text-sm">Username</mat-label>
           <input id="name" formControlName="username" matInput  />
           <!-- <mat-error *ngIf="hasValidationError('name')?.touched">
@@ -58,41 +59,41 @@
           </mat-error> -->
         </mat-form-field>
         <!-- Name field -->
-        <mat-form-field fxFlex="70" fxFlex.lt-sm="100" class="w-full mr-0">
+        <mat-form-field fxFlex="34" fxFlex.lt-sm="100" class="w-full mr-0">
           <mat-label class="text-sm">Email</mat-label>
-          <input id="name" formControlName="email" matInput  />
+          <input id="name" formControlName="email" matInput   />
           <!-- <mat-error *ngIf="hasValidationError('name')?.touched">
                     Name is required
                   </mat-error> -->
         </mat-form-field>
         <!-- Name field -->
-        <mat-form-field fxFlex="70" fxFlex.lt-sm="100" class="w-full mr-0">
+        <mat-form-field fxFlex="35" fxFlex.lt-sm="100" class="w-full mr-0">
           <mat-label class="text-sm">Old Password</mat-label>
-          <input id="name" formControlName="old_pass" matInput  />
+          <input id="name" formControlName="old_pass"matInput />
           <!-- <mat-error *ngIf="hasValidationError('name')?.touched">
             Name is required
           </mat-error> -->
         </mat-form-field>
         <!-- Name field -->
-        <mat-form-field fxFlex="70" fxFlex.lt-sm="100" class="w-full mr-0">
+        <mat-form-field fxFlex="34" fxFlex.lt-sm="100" class="w-full mr-0">
           <mat-label class="text-sm">	New Password</mat-label>
-          <input id="name" formControlName="new_pass" matInput rquired />
+          <input id="name" formControlName="new_pass" matInput />
           <!-- <mat-error *ngIf="hasValidationError('name')?.touched">
                     Name is required
                   </mat-error> -->
         </mat-form-field>
         <!-- Name field -->
-        <mat-form-field fxFlex="70" fxFlex.lt-sm="100" class="w-full mr-0">
+        <mat-form-field fxFlex="35" fxFlex.lt-sm="100" class="w-full mr-0">
           <mat-label class="text-sm">Status</mat-label>
-          <input id="name" formControlName="status" matInput  />
+          <input id="name" formControlName="status"  matInput />
           <!-- <mat-error *ngIf="hasValidationError('name')?.touched">
             Name is required
           </mat-error> -->
         </mat-form-field>
         <!-- Name field -->
-        <mat-form-field fxFlex="70" fxFlex.lt-sm="100" class="w-full mr-0">
+        <mat-form-field fxFlex="34" fxFlex.lt-sm="100" class="w-full mr-0">
           <mat-label class="text-sm">	Billing Alert</mat-label>
-          <input id="name" formControlName="billing_alert" matInput  />
+          <input id="name" formControlName="billing_alert" matInput />
           <!-- <mat-error *ngIf="hasValidationError('name')?.touched">
                     Name is required
                   </mat-error> -->
@@ -100,16 +101,57 @@
         <!-- Name field -->
         <mat-form-field fxFlex="70" fxFlex.lt-sm="100" class="w-full mr-0">
           <mat-label class="text-sm">Note</mat-label>
-          <input id="name" formControlName="note" matInput required />
+          <input id="name" formControlName="note" matInput />
           <!-- <mat-error *ngIf="hasValidationError('name')?.touched">
             Name is required
           </mat-error> -->
         </mat-form-field>
+
       </div>
     </div>
   </form>
 </mat-dialog-content>
 <mat-dialog-actions align="end">
   <button mat-button mat-dialog-close>Cancel</button>
-  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Install</button>
+  <button mat-button [mat-dialog-close]="true">Submit</button>
 </mat-dialog-actions>
+
+
+<!-- <form [formGroup]="profileForm">
+
+  <label for="first-name">Name: </label>
+  <input id="first-name" type="text" formControlName="name">
+
+  <label for="last-name">Owner: </label>
+  <input id="last-name" type="text" formControlName="owner">
+
+  <label for="first-name">Description: </label>
+  <input id="first-name" type="text" formControlName="desciption">
+
+  <label for="last-name">URL: </label>
+  <input id="last-name" type="text" formControlName="url">
+
+  <label for="first-name">Username: </label>
+  <input id="first-name" type="text" formControlName="username">
+
+  <label for="last-name">Email: </label>
+  <input id="last-name" type="text" formControlName="email">
+
+  <label for="first-name">Old Password: </label>
+  <input id="first-name" type="text" formControlName="old_pass">
+
+  <label for="last-name">	New Password: </label>
+  <input id="last-name" type="text" formControlName="new_pass">
+
+  <label for="first-name">Status: </label>
+  <input id="first-name" type="text" formControlName="status">
+
+  <label for="last-name">Billing Alert: </label>
+  <input id="last-name" type="text" formControlName="billing_alert">
+
+  <label for="first-name">Note: </label>
+  <input id="first-name" type="text" formControlName="note">
+
+
+
+</form> -->

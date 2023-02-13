@@ -33,7 +33,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import { HomeComponent } from './components/home/home.component';
 import { MitsLicenseComponent } from './components/modals/mits-license/mits-license.component';
 import {MatDialogModule} from '@angular/material/dialog';
-
+import {  MatInputModule } from '@angular/material/input'
 
 
 @NgModule({
@@ -48,6 +48,9 @@ import {MatDialogModule} from '@angular/material/dialog';
     HomeComponent,
     MitsLicenseComponent
   ],
+  entryComponents: [
+    MitsLicenseComponent
+  ] ,
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -67,7 +70,8 @@ import {MatDialogModule} from '@angular/material/dialog';
     MatListModule,
     MatCheckboxModule,
     MatExpansionModule,
-    MatDialogModule
+    MatDialogModule,
+    MatInputModule
 
 
   ],

@@ -14,6 +14,7 @@ export class MitsLicenseComponent implements OnInit {
 
   ngOnInit(): void {
     this._createForm()
+
   }
 
 
@@ -33,6 +34,20 @@ export class MitsLicenseComponent implements OnInit {
       note:new FormControl(''),
     })
   }
+
+  // profileForm = new FormGroup({
+  //   name: new FormControl(''),
+  //       owner : new FormControl(''),
+  //       desciption: new FormControl(''),
+  //       url: new FormControl(''),
+  //       username:new FormControl(''),
+  //       email: new FormControl(''),
+  //       old_pass : new FormControl(''),
+  //       new_pass: new FormControl(''),
+  //       status: new FormControl(''),
+  //       billing_alert:new FormControl(''),
+  //       note:new FormControl(''),
+  // });
 
   public get signInFormOneControls() {
     return this.form.controls;
